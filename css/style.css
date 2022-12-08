@@ -333,6 +333,7 @@ color: var(--title);
 }
 
 .input-modal{
+  padding-left: 42px;
   display: block;
   width: 448px;
   height: 40px;
@@ -341,7 +342,7 @@ color: var(--title);
   
 }
 
-.modal-form-conteiner .input-modal:not(:last-child){
+.modal-form-conteiner .submit:not(:last-child){
   margin-bottom: 10px;
 } 
 
@@ -360,13 +361,9 @@ color: var(--title);
   
 }
 
-.checkbox{
-  width: 16px;
-  height: 15px;
-  border: solid 2px var(--title);
-  margin-top: 25px;
-  margin-right:8px ;
-}
+
+
+
 
 .modal-checkbox{
   font-size: 14px;
@@ -375,14 +372,43 @@ color: var(--title);
   color: #757575;
 }
 
+.submit{
+  position: relative;
+  
+}
+
+.icon-form{
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  transformY: -50%;
+
+}
+
+.input-modal:focus{
+  outline: none; 
+  border:solid 1px var(--hover-focus-color);
+  
+}
+
+.comment-modal:focus{
+  outline: none; 
+  border:solid 1px var(--hover-focus-color);
+
+   
+}
+
+.input-modal:focus-within + .icon-form {
+  fill:var(--hover-focus-color);
+  
+}
+
+
 .terms{
   color: var(--hover-focus-color);
 }
 
-.checkbox-conteiner{
-  
 
-}
 
 .button-submit-form{
   margin-top: 30px;

@@ -82,23 +82,47 @@
               <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
 
             <div class="modal-form-conteiner">
-              <label for="modal-input" class="label-modal">Email</label>
-              <input type="text" id="modal-input" class="input-modal">
-
-              <label for="modal-input-tel" class="label-modal">Телефон</label>
-              <input type="tel" id="modal-input-tel" class="input-modal">
-
-              <label for="modal-input-email" class="label-modal">Пошта</label>
-              <input type="email" id="modal-input-email" class="input-modal">
-
+              
+                <label for="modal-input" class="label-modal">Email</label>
+              <div class="submit">
+                <input type="text" name="name" id="modal-input" class="input-modal" placeholder=" ">
+                <svg width="18" height="18" class="icon-form">
+                  <use  href="./images/symbol-defs.svg#icon-formperson"></use>
+                </svg>
+              </div> 
+              
+                <label for="modal-input-tel" class="label-modal">Телефон</label>
+              <div class="submit">
+                <input type="tel" name="tel" id="modal-input-tel" class="input-modal" placeholder=" ">
+                <svg width="18" height="18" class="icon-form" >
+                  <use  href="./images/symbol-defs.svg#icon-formphone"></use>
+                </svg>
+              </div>  
+              
+                <label for="modal-input-email" class="label-modal">Пошта</label>
+              <div class="submit">  
+                <input type="email" name="mail" id="modal-input-email" class="input-modal" placeholder=" ">
+                <svg width="18" height="18" class="icon-form" >
+                  <use href="./images/symbol-defs.svg#icon-formemail"></use>
+                </svg>
+              </div>  
               <label for="modal-comment" class="label-modal">Коментар</label>
              <textarea name="comment" placeholder="Введіть текст" class="comment-modal"></textarea>
-                        
-                        
+                               
             </div>
 
             <div class="checkbox-conteiner">
-              <input type="checkbox"  id="checkbox" class="checkbox">
+              <div class="check-conteiner">
+                <svg width="16" height="15" class="icon-checkform">
+                  <use href="./images/symbol-defs.svg#formborder-checked0">
+                  </use>
+                </svg>
+              <input type="checkbox"  name="comment" id="checkbox" class="checkbox">
+              <svg width="16" height="15" class="icon-checkform">
+                <use href="./images/symbol-defs.svg#formicon-check">
+                </use>
+              </svg>
+            </div>
               <label for="checkbox" class="modal-checkbox">Погоджуюся з розсилкою та приймаю <a href="" class="terms">Умови договору</a>
               </label>
             </div>
