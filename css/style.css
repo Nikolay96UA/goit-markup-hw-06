@@ -1,8 +1,4 @@
-/* background: #212121; Заголоки*/
-/*  background: #757575; Основний колір тексту*/
-/*background: #2196F3; Блакитний колір*/
-/* #FFFFFF Білий колір колір заголовка героя */
-/* #FFFFFF Основний колір сторінки */
+/* CSS змінні */
 
 :root {
   --title: #212121;
@@ -15,13 +11,16 @@
   --backgraund-section: #f5f4fa;
 }
 
+/* оформлення тіла сайту*/
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;  
   color: var(--text-page);
   background-color: var(--backgraund-body);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
 
 h1,
 h2,
@@ -34,6 +33,8 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/* розміщення контенту в задану ширину */
 
 .conteiner {
   margin-left: auto;
@@ -51,6 +52,8 @@ button {
 .list {
   list-style: none;
 }
+
+
 
 /* Логотип */
 .nav {
@@ -90,6 +93,7 @@ button {
   
 }
 
+/* один зі способів прибирати крайній margin*/
 .nav-list .nav-link:not(:last-child) {
   margin-right: 50px;
 }
@@ -112,13 +116,10 @@ button {
 
 .site-nav:hover,
 .site-nav:focus {
-  
   color: var(--hover-focus-color);
-  
 }
 
-
-
+/* розмішення декоративної лінії під елементом навігації */
 .site-nav::after{
   content: '';
   width: 100%;
@@ -167,17 +168,17 @@ button {
   margin-left: auto;
 }
 
+/* один зі способів прибирати крайній margin*/
 .socials-nav .socials-link + .socials-link {
   margin-left: 50px;
 }
+
 
 .icon-social {
   display: inline;
   margin-right: 11px;
   fill: currentColor;
-  
 }
-
 
 .socials {
   display:flex;
@@ -202,7 +203,6 @@ button {
 /* Герой */
 
 .hero {
-  
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -264,10 +264,10 @@ button {
 
 /* модальне вікно */
 
+/* не відображає модальне вікно та дозволяє клік через модальне вікно */
 .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
-
 }
 
 .backdrop{
@@ -331,18 +331,18 @@ button {
 /* Форма */
 
 .modal-form-conteiner{
-  margin-left: 40px;
+  padding:0 40px 0 40px ;
 }
 
 .modal-title{
-margin-top: 40px;
-margin-bottom: 12px;
+  margin-top: 40px;
+  margin-bottom: 12px;
 
- font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-letter-spacing: 0.03em;
-color: var(--title);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--title);
 }
 
 .label-modal{
@@ -351,13 +351,11 @@ color: var(--title);
 }
 
 .input-modal{
-  padding-left: 42px;
+  padding: 11px 42px 11px 42px;
   display: block;
-  width: 448px;
-  height: 40px;
+  width:100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  
 }
 
 .modal-form-conteiner .submit:not(:last-child){
@@ -374,8 +372,7 @@ color: var(--title);
   position: absolute;
   top: 11px;
   left: 12px;
-  transformY: -50%;
-
+  
 }
 
 .input-modal:focus{
@@ -701,8 +698,8 @@ color: var(--title);
 }
 
 .footer-address {
-  display: block;
-
+  display: inline-block;
+  width: 230px;
   color: var(--hero-text);
   font-style: normal;
   text-decoration: none;
@@ -734,6 +731,8 @@ color: var(--title);
 .footer-margin .item:not(:last-child) {
   margin-bottom: 9px;
 }
+
+
 
 .footer-messenger{
   margin-left: 70px;  
@@ -935,7 +934,7 @@ color: var(--title);
 /*  форма підписки */
 .form-footer{
   display: block;
-  padding-left: 93px;
+  margin-left: 93px;
 }
 
 .input-footer{
